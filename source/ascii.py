@@ -1,5 +1,3 @@
-#!/usr/bin/python
-
 def text(txt):  #073 068 126
     i = 0
     c = 0
