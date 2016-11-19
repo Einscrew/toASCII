@@ -8,7 +8,11 @@ def text(txt):  #073 068 126
         while c < 3:
             buffer = buffer + txt[i+c]
             c += 1
-        output = output + chr(int(buffer))
+        try:
+            output = output + chr(int(buffer))
+        except:
+            print 'Not valid ASCII number'
+            break
         buffer = ''
         i+=4
     return output
